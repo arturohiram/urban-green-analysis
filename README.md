@@ -83,22 +83,6 @@ jupyter lab
 
 With the data in data/raw, run the notebooks 02, 03, 04 and 05 in order (01 is only needed to download the images again). Notebook 02 takes about 1.5 hours and 03 about 1 hour. The notebooks are saved with their outputs, so the results can also be read directly on GitHub.
 
-## Structure
-
-```
-01_sentinel_download.ipynb
-02_model_validation.ipynb
-03_prediction.ipynb
-04_ageb_indicators.ipynb
-05_maps.ipynb
-config.py           paths
-utils.py            image reading and features
-mask_tool.py        labeling tool
-requirements.txt
-results/            tables and figures
-data/raw/           training masks and tiles
-```
-
 ## Resumen en español
 
 Mapa de vegetación de la Zona Metropolitana de Monterrey con imágenes Sentinel-2 y un clasificador Random Forest, entrenado con 1.14 millones de píxeles etiquetados a mano. El mapa se cruzó con el Censo 2020, el rezago social de CONEVAL y la temperatura superficial de Landsat-8 para identificar las AGEB urbanas más críticas. Evaluado en cuadrantes que no vio, el modelo tiene una exactitud balanceada de 0.917, por debajo de un umbral simple de NDVI (0.942). Se identificaron 155 AGEB prioritarias con 599,810 habitantes. Fue la parte de análisis de datos de mi proyecto final de Ingeniería Física Industrial en el Tec de Monterrey (2025).
