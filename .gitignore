@@ -1,0 +1,11 @@
+# macOS / Python / Jupyter
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+
+# Data: only the training data is in the repository (labels + 49 labeled tiles)
+data/*
+!data/raw/
+data/raw/*
+!data/raw/training_tiles/
+!data/raw/training_masks/
